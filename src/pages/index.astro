@@ -1,11 +1,96 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro"
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const foodItems = [
+  { image: "/src/assets/Siomay/Siomay 25.jpeg", name: "Siomay", description: "Siomay tradisional dengan soal nikmat" },
+  { image: "/src/assets/Dimsum/Dimsum.jpeg", name: "Dimsum", description: "Dimsum lezat dibuat dengan bahan segar" },
+  { image: "/src/assets/Katsu/Katsu.jpeg", name: "Katsu", description: "Katsu crispy dengan saus spesial" },
+  { image: "/src/assets/Nugget/Spicy Chicken 10 (Ayam).jpeg", name: "Nugget", description: "Nugget ayam gurih dan empuk" },
+  { image: "/src/assets/Risol - Corndog/Risol 5 (Ayam Pds - Bolognaise - Sayur).jpeg", name: "Risol & Corndog", description: "Risol isi pilihan dan corndog lezat" },
+  { image: "/src/assets/Cireng/[Display]-Cireng.jpeg", name: "Cireng", description: "Cireng gurih tradisional Bandung" },
+];
 ---
-
 <Layout>
-	<Welcome />
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-r from-orange-500 to-orange-600 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">
+        <i class="fas fa-utensils mr-3 text-yellow-300"></i>Koemau
+      </h1>
+      <p class="text-xl md:text-2xl mb-4">-</p>
+      <p class="text-lg mb-8 max-w-2xl mx-auto">-</p>
+      <a href="https://wa.me/628123456789?text=Halo%20Dapur%20Koemau%21%20Saya%20ingin%20memesan%20produk%20Anda." class="inline-block bg-white text-orange-600 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition">
+        <i class="fab fa-whatsapp mr-2"></i>Pesan Sekarang via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 text-gray-500">Mengapa Memilih Dapur Koemau?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="text-4xl mb-4"><i class="fas fa-leaf text-green-500"></i></div>
+          <h3 class="text-xl font-bold mb-2 text-gray-500">-</h3>
+          <p class="text-orange-500">-</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="text-4xl mb-4"><i class="fas fa-chef-hat text-orange-500"></i></div>
+          <h3 class="text-xl font-bold mb-2 text-gray-500">-</h3>
+          <p class="text-orange-500">-</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="text-4xl mb-4"><i class="fas fa-bolt text-yellow-500"></i></div>
+          <h3 class="text-xl font-bold mb-2 text-gray-500">-</h3>
+          <p class="text-orange-500">-</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-4 text-gray-500">
+        <i class="fas fa-list text-orange-500 mr-3"></i>Menu Kami
+      </h2>
+      <p class="text-center text-orange-500 mb-12 max-w-2xl mx-auto">Pilihan Frozen Food lezat yang telah menjadi favorit pelanggan kami</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {foodItems.map((item) => (
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition transform hover:scale-105">
+            <div class="relative overflow-hidden h-64 bg-gray-200">
+              <img src={item.image} alt={item.name} class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-gray-500">{item.name}</h3>
+              <p class="text-orange-500 mb-4">{item.description}</p>
+              <a href="-" class="w-full block text-center bg-orange-600 text-white py-2 rounded-lg hover:bg-orange-700 transition font-medium">
+                Pesan Sekarang
+              </a>
+              {/* <a href="https://wa.me/628123456789?text=Halo%20Dapur%20Koemau%21%20Saya%20ingin%20memesan%20{item.name}" class="w-full block text-center bg-orange-600 text-white py-2 rounded-lg hover:bg-orange-700 transition font-medium">
+                Pesan Sekarang
+              </a> */}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA Section -->
+  <section class="bg-orange-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4">Siap Memesan?</h2>
+      <p class="text-xl mb-8">Hubungi kami melalui WhatsApp untuk pemesanan mudah dan cepat</p>
+      <a href="-" class="inline-block bg-white text-orange-600 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition">
+        <i class="fab fa-whatsapp mr-2"></i>Chat via WhatsApp
+      </a>
+      <!-- <a href="https://wa.me/628123456789?text=Halo%20Dapur%20Koemau%21%20Saya%20ingin%20memesan%20produk%20Anda." class="inline-block bg-white text-orange-600 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition">
+        <i class="fab fa-whatsapp mr-2"></i>Chat via WhatsApp
+      </a> -->
+    </div>
+  </section>
 </Layout>
