@@ -16,5 +16,5 @@ export default defineConfig({
   integrations: [alpinejs(), react()],
 
   site: "https://rankard07.github.io",
-  base: "/landing-page-koemau/",
+  base: "/landing-page-koemau",
 });
