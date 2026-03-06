@@ -1,46 +1,50 @@
-# Astro Starter Kit: Basics
+# Dapur Koemau — Landing Page
 
-```sh
-npm create astro@latest -- --template basics
-```
+## Ringkasan
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Repositori ini adalah implementasi landing page untuk "Dapur Koemau" menggunakan Astro. Situs menampilkan produk makanan, memudahkan pelanggan memesan via WhatsApp, dan menyediakan halaman pendukung: About, Contact, dan Location.
 
-## 🚀 Project Structure
+## Struktur Proyek (ringkas)
 
-Inside of your Astro project, you'll see the following folders and files:
+- src/pages/ — Halaman aplikasi: index.astro, about.astro, contact.astro, location.astro
+- src/components/ — Komponen UI bersama: Navbar.astro, Footer.astro, MainCard.astro, Welcome.astro
+- src/styles/ — Style global dan komponen (global.css, EmblaCarousel.css)
+- public/ — Aset statis (gambar produk, favicon, dsb.)
+- bin/ — Skrip atau eksperimen developer (bukan bagian runtime utama)
+- package.json, astro.config.mjs — Konfigurasi dan skrip build/dev
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## Instruksi Pengembangan
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+1. Pasang dependensi:
 
-## 🧞 Commands
+   npm install
 
-All commands are run from the root of the project, from a terminal:
+2. Jalankan server development:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+   npm run dev
 
-## 👀 Want to learn more?
+3. Build untuk produksi:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+   npm run build
+
+4. Pratinjau hasil build:
+
+   npm run preview
+
+## Catatan Pengoperasian
+
+- Link WhatsApp utama: perbarui di komponen `Navbar.astro` dan `Footer.astro` jika ingin mengganti nomor/format.
+- Gambar produk berada di `public/assets/` — tambahkan folder baru untuk produk baru.
+- Komponen UI berada di `src/components/` — buat komponen ulang bila fitur baru diperlukan.
+
+## Pemeliharaan Dokumentasi
+
+Dokumentasi tambahan telah dirapikan: file markdown terpisah di root dihapus untuk menjaga repositori fokus. Bila Anda ingin dokumentasi terperinci (peta situs, panduan deploy, dsb.), saya bisa menambah folder `docs/` atau membuat kembali file ringkas yang terintegrasi ke README.
+
+## Butuh Bantuan?
+
+Jika ingin saya membuat ulang SITE_MAP ringkas, menambahkan panduan deploy, atau commit perubahan, beri tahu saya — saya bisa lanjutkan.
+
+## Lisensi
+
+Tambahkan informasi lisensi di sini bila diperlukan.
