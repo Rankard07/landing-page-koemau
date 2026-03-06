@@ -52,7 +52,7 @@ Halaman lokasi dengan:
 
 ### 1. **Ubah Nomor WhatsApp**
 
-Ganti nomor `628123456789` di tempat-tempat berikut dengan nomor WhatsApp Anda yang sebenarnya:
+Ganti nomor `6281298809641` di tempat-tempat berikut dengan nomor WhatsApp Anda yang sebenarnya:
 
 **File-file yang perlu diubah:**
 
@@ -66,7 +66,7 @@ Ganti nomor `628123456789` di tempat-tempat berikut dengan nomor WhatsApp Anda y
 **Cari dan ganti:**
 
 ```
-https://wa.me/628123456789
+https://wa.me/6281298809641
 ```
 
 Dengan:

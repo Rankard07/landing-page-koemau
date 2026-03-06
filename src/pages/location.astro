@@ -3,20 +3,20 @@ import Layout from "../layouts/Layout.astro"
 ---
 <Layout>
   <!-- Location Header -->
-  <section class="bg-gradient-to-r from-orange-500 to-orange-600 text-white py-12">
+  <section class="bg-orange-300 text-gray-800 py-12">
     <div class="max-w-7xl mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-2"><i class="fas fa-map-marker-alt mr-3"></i>Lokasi Kami</h1>
+      <h1 class="text-4xl md:text-5xl font-bold mb-2"><i class="fas fa-map-marker-alt mr-3 text-goldenrod"></i>Lokasi Kami</h1>
       <p class="text-lg">Kunjungi dapur kami atau pesan untuk dikirim ke rumah Anda</p>
     </div>
   </section>
 
   <!-- Location Content -->
-  <section class="py-16 bg-white">
+  <section class="py-16 bg-beige">
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
         <!-- Map -->
         <div>
-          <h2 class="text-3xl font-bold mb-6">Peta Lokasi</h2>
+          <h2 class="text-3xl font-bold mb-6 text-gray-800">Peta Lokasi</h2>
           <div class="rounded-lg overflow-hidden shadow-lg h-96">
             <!-- <iframe src="https://maps.app.goo.gl/7djWu5wsy4KhJvCe6" width="100%" height="100%" style="border:0;" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe> -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0573896770425!2d106.9245912!3d-6.256170300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d27dd83e747%3A0xc36c8bcfc3741a66!2sJl.%20Almadaniah%20II%20No.8%2C%20RT.008%2FRW.002%2C%20Jaticempaka%2C%20Kec.%20Pd.%20Gede%2C%20Kota%20Bks%2C%20Jawa%20Barat%2017411!5e0!3m2!1sid!2sid!4v1772009614740!5m2!1sid!2sid" width="100%" 
@@ -28,7 +28,7 @@ import Layout from "../layouts/Layout.astro"
   title="Koemau"></iframe>
             
           </div>
-          <a href="https://maps.app.goo.gl/7djWu5wsy4KhJvCe6" target="_blank" class="inline-block mt-4 text-orange-600 font-bold hover:text-orange-700 transition">
+          <a href="https://maps.app.goo.gl/7djWu5wsy4KhJvCe6" target="_blank" class="inline-block mt-4 font-bold hover:opacity-80 transition text-goldenrod">
             <i class="fas fa-map-marker-alt mr-2"></i>Lihat di Google Maps →
           </a>
         </div>
@@ -55,17 +55,17 @@ import Layout from "../layouts/Layout.astro"
             </div>
 
             <!-- Jam Operasional -->
-            <div class="bg-gray-50 p-6 rounded-lg">
+            <!-- <div class="bg-gray-50 p-6 rounded-lg">
               <h3 class="text-xl font-bold text-orange-600 mb-2 flex items-center gap-2">
                 <i class="fas fa-clock"></i>Jam Operasional
               </h3>
-              <!-- <div class="space-y-2 text-gray-700">
+              <div class="space-y-2 text-gray-700">
                 <p><strong>Senin - Jumat:</strong> 08:00 - 20:00</p>
                 <p><strong>Sabtu:</strong> 09:00 - 21:00</p>
                 <p><strong>Minggu:</strong> 09:00 - 21:00</p>
                 <p class="text-sm text-gray-500 mt-2">*Tutup Hari Raya & Libur Nasional</p>
-              </div> -->
-            </div>
+              </div>
+            </div> -->
 
             <!-- Kontak -->
             <div class="bg-gray-50 p-6 rounded-lg">
@@ -74,20 +74,20 @@ import Layout from "../layouts/Layout.astro"
               </h3>
               <div class="space-y-2">
                 <p class="text-gray-700">
-                  <a href="https://wa.me/628123456789" class="text-green-500 font-bold hover:text-green-600 transition">
+                  <a href="https://wa.me/6281298809641" class="text-green-500 font-bold hover:text-green-600 transition">
                     <i class="fab fa-whatsapp mr-2"></i>WhatsApp: +62 812 3456 789
                   </a>
                 </p>
                 <p class="text-gray-700">
-                  <a href="tel:+628123456789" class="text-blue-600 font-bold hover:text-blue-700 transition">
+                  <a href="tel:+6281298809641" class="text-blue-600 font-bold hover:text-blue-700 transition">
                     <i class="fas fa-phone mr-2"></i>Telepon: +62 812 3456 789
                   </a>
                 </p>
-                <p class="text-gray-700">
+                <!-- <p class="text-gray-700">
                   <a href="mailto:info@koemau.com" class="text-orange-600 font-bold hover:text-orange-700 transition">
                     <i class="fas fa-envelope mr-2"></i>Email: info@koemau.com
                   </a>
-                </p>
+                </p> -->
               </div>
             </div>
 
@@ -120,9 +120,9 @@ import Layout from "../layouts/Layout.astro"
       </div>
 
       <!-- Directions -->
-      <div class="bg-blue-50 border-2 border-blue-300 rounded-lg p-8">
-        <h2 class="text-2xl font-bold mb-4 flex items-center gap-2 text-gray-500">
-          <i class="fas fa-compass"></i>Cara Menuju Koemau
+      <div class="rounded-lg p-8 bg-gray-100 border-2 border-goldenrod">
+        <h2 class="text-2xl font-bold mb-4 flex items-center gap-2 text-gray-800">
+          <i class="fas fa-compass text-goldenrod"></i>Cara Menuju Koemau
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
@@ -183,15 +183,15 @@ import Layout from "../layouts/Layout.astro"
   </section> -->
 
   <!-- CTA Section -->
-  <section class="bg-orange-600 text-white py-16">
+  <section class="bg-charcoal text-white py-16">
     <div class="max-w-7xl mx-auto px-4 text-center">
       <h2 class="text-4xl font-bold mb-4">Sudah Tahu Tempatnya?</h2>
-      <p class="text-xl mb-8">Pesan sekarang atau kunjungi kami untuk pengalaman kuliner terbaik</p>
+      <p class="text-xl mb-8">Pesan sekarang atau kunjungi kami!!!</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://wa.me/628123456789?text=Saya%20akan%20berkunjung%20ke%20Dapur%20Koemau%20segera" class="inline-block bg-green-500 px-8 py-3 rounded-full font-bold hover:bg-green-600 transition">
+        <a href="https://wa.me/6281298809641?text=Saya%20akan%20berkunjung%20ke%20Dapur%20Koemau%20segera" class="inline-block px-8 py-3 rounded-full font-bold hover:opacity-90 transition text-white bg-green-500">
           <i class="fab fa-whatsapp mr-2"></i>Pesan Sekarang
         </a>
-        <a href="https://maps.app.goo.gl/7djWu5wsy4KhJvCe6" target="_blank" class="inline-block bg-white text-orange-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+        <a href="https://maps.app.goo.gl/7djWu5wsy4KhJvCe6" target="_blank" class="inline-block px-8 py-3 rounded-full font-bold hover:opacity-90 transition text-white bg-goldenrod">
           <i class="fas fa-map mr-2"></i>Lihat Peta
         </a>
       </div>

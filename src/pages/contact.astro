@@ -3,54 +3,54 @@ import Layout from "../layouts/Layout.astro"
 ---
 <Layout>
   <!-- Contact Header -->
-  <section class="bg-gradient-to-r from-orange-500 to-orange-600 text-white py-12">
+  <section class="bg-orange-300 text-gray-800 py-12">
     <div class="max-w-7xl mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-2"><i class="fas fa-phone mr-3"></i>Hubungi Kami</h1>
+      <h1 class="text-4xl md:text-5xl font-bold mb-2"><i class="fas fa-phone mr-3 text-goldenrod"></i>Hubungi Kami</h1>
       <p class="text-lg">Kami siap melayani pesanan Anda dengan sepenuh hati</p>
     </div>
   </section>
 
   <!-- Contact Content -->
-  <section class="py-16 bg-white">
+  <section class="py-16 bg-beige">
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <!-- Contact Info -->
         <div>
-          <h2 class="text-3xl font-bold mb-8 text-gray-500">Informasi Kontak</h2>
+          <h2 class="text-3xl font-bold mb-8 text-gray-800">Informasi Kontak</h2>
           
           <div class="space-y-6">
             <!-- WhatsApp -->
             <div class="flex items-start gap-4">
-              <div class="text-4xl text-orange-600"><i class="fas fa-comments"></i></div>
+              <div class="text-4xl text-goldenrod"><i class="fas fa-comments"></i></div>
               <div>
-                <h3 class="text-xl font-bold mb-2 text-gray-500">WhatsApp</h3>
-                <p class="text-orange-500 mb-2">Pesan mudah melalui WhatsApp kami</p>
-                <a href="https://wa.me/628123456789?text=Halo%20Dapur%20Koemau%21%20Saya%20ingin%20memesan%20produk%20Anda." class="inline-block bg-green-500 text-white px-6 py-2 rounded-full font-bold hover:bg-green-600 transition">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">WhatsApp</h3>
+                <p class="mb-2 text-goldenrod">Pesan mudah melalui WhatsApp kami</p>
+                <a href="https://wa.me/6281298809641?text=Halo%20Koemau%21%20Saya%20ingin%20memesan%20produk%20Anda." class="inline-block text-white px-6 py-2 rounded-full font-bold hover:opacity-90 transition bg-green-500">
                   <i class="fab fa-whatsapp mr-2"></i>Chat WhatsApp
                 </a>
-                <p class="text-orange-500 mt-2">+62 812 3456 789</p>
+                <p class="mt-2 text-goldenrod">+62 8129 8809 641</p>
               </div>
             </div>
 
             <!-- Email -->
-            <div class="flex items-start gap-4">
-              <div class="text-4xl text-orange-600"><i class="fas fa-envelope"></i></div>
+            <!-- <div class="flex items-start gap-4">
+              <div class="text-4xl text-goldenrod"><i class="fas fa-envelope"></i></div>
               <div>
-                <h3 class="text-xl font-bold mb-2 text-gray-500">Email</h3>
-                <p class="text-orange-500 mb-2">Kirim pertanyaan atau pesanan khusus</p>
-                <a href="mailto:info@koemau.com" class="text-orange-600 font-bold hover:text-orange-700 transition">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Email</h3>
+                <p class="mb-2 text-goldenrod">Kirim pertanyaan atau pesanan khusus</p>
+                <a href="mailto:info@koemau.com" class="font-bold hover:opacity-80 transition text-goldenrod">
                   info@koemau.com
                 </a>
               </div>
-            </div>
+            </div> -->
 
             <!-- Phone -->
             <div class="flex items-start gap-4">
-              <div class="text-4xl text-orange-600"><i class="fas fa-phone"></i></div>
+              <div class="text-4xl text-goldenrod"><i class="fas fa-phone"></i></div>
               <div>
-                <h3 class="text-xl font-bold mb-2 text-gray-500">Telepon</h3>
-                <p class="text-orange-500 mb-2">Hubungi kami melalui telepon</p>
-                <a href="tel:+628123456789" class="text-orange-600 font-bold hover:text-orange-700 transition">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Telepon</h3>
+                <p class="mb-2 text-goldenrod">Hubungi kami melalui telepon</p>
+                <a href="tel:+6281298809641" class="font-bold hover:opacity-80 transition text-goldenrod">
                   +62 812 3456 789
                 </a>
               </div>
@@ -58,69 +58,69 @@ import Layout from "../layouts/Layout.astro"
 
             <!-- Location -->
             <div class="flex items-start gap-4">
-              <div class="text-4xl text-orange-600"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="text-4xl text-goldenrod"><i class="fas fa-map-marker-alt"></i></div>
               <div>
-                <h3 class="text-xl font-bold mb-2 text-gray-500">Lokasi</h3>
-                <p class="text-orange-500 mb-2">Kunjungi kami untuk melihat tempat kami</p>
-                <a href="/location" class="inline-block text-orange-600 font-bold hover:text-orange-700 transition">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Lokasi</h3>
+                <p class="mb-2 text-goldenrod">Kunjungi kami untuk melihat tempat kami</p>
+                <a href="/location" class="inline-block font-bold hover:opacity-80 transition text-goldenrod">
                   Lihat Lokasi di Peta →
                 </a>
               </div>
             </div>
 
             <!-- Jam Operasional -->
-            <div class="flex items-start gap-4">
-              <div class="text-4xl text-orange-600"><i class="fas fa-clock"></i></div>
+            <!-- <div class="flex items-start gap-4">
+              <div class="text-4xl text-goldenrod"><i class="fas fa-clock"></i></div>
               <div>
-                <h3 class="text-xl font-bold mb-2 text-gray-500">Jam Operasional</h3>
-                <!-- <div class="text-orange-500 space-y-1">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Jam Operasional</h3>
+                <div class="text-orange-500 space-y-1">
                   <p><i class="fas fa-calendar-alt mr-2"></i>Senin - Jumat: 08:00 - 20:00</p>
                   <p><i class="fas fa-calendar-alt mr-2"></i>Sabtu - Minggu: 09:00 - 21:00</p>
                   <p class="text-sm mt-2">*Waktu Pengiriman Tergantung Ketersediaan</p>
-                </div> -->
+                </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
 
         <!-- Contact Form -->
         <div>
-          <h2 class="text-3xl font-bold mb-8 text-gray-500">Kirim Pesan</h2>
+          <h2 class="text-3xl font-bold mb-8 text-gray-800">Kirim Pesan</h2>
           
-          <div class="bg-gray-50 p-8 rounded-lg">
+            <div class="p-8 rounded-lg bg-gray-100">
             <form id="contactForm" class="space-y-6">
               <!-- Name -->
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nama Anda</label>
-                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none text-black" placeholder="John Doe">
+                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-transparent outline-none text-black" placeholder="John Doe">
               </div>
 
               <!-- Email -->
               <div>
                 <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none" placeholder="john@example.com">
+                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-transparent outline-none text-black" placeholder="john@example.com">
               </div>
 
               <!-- Phone -->
               <div>
                 <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Nomor Telepon</label>
-                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none" placeholder="+62 812 3456 789">
+                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-transparent outline-none text-black" placeholder="+62 812 3456 789">
               </div>
 
               <!-- Message -->
               <div>
                 <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Pesan</label>
-                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none" placeholder="Tulis pesan Anda di sini..."></textarea>
+                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-transparent outline-none text-black" placeholder="Tulis pesan Anda di sini..."></textarea>
               </div>
 
               <!-- Submit Button -->
-              <button type="submit" class="w-full bg-orange-600 text-white font-bold py-2 rounded-lg hover:bg-orange-700 transition">
+              <button type="submit" class="w-full text-white font-bold py-2 rounded-lg hover:opacity-90 transition bg-goldenrod">
                 <i class="fab fa-whatsapp mr-2"></i>Kirim via WhatsApp
               </button>
             </form>
             
-            <div class="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
-              <p class="text-sm text-blue-800"><i class="fas fa-lightbulb mr-2"></i><strong>Tip:</strong> Untuk respons lebih cepat, hubungi kami langsung melalui WhatsApp di tombol di atas!</p>
+            <div class="mt-6 p-4 rounded-lg border bg-beige border-goldenrod">
+              <p class="text-sm text-charcoal"><i class="fas fa-lightbulb mr-2"></i><strong>Tip:</strong> Untuk respons lebih cepat, hubungi kami langsung melalui WhatsApp di tombol di atas!</p>
             </div>
           </div>
         </div>
@@ -129,24 +129,24 @@ import Layout from "../layouts/Layout.astro"
   </section>
 
   <!-- Why Order Section -->
-  <section class="py-16 bg-gray-50">
+  <section class="py-16 bg-charcoal">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12 text-gray-500">Cara Memesan</h2>
+      <h2 class="text-3xl font-bold text-center mb-12 text-white">Cara Memesan</h2>
       <div class="grid grid-cols-3 gap-4">
-        <div class="bg-white p-6 rounded-lg shadow-md text-center">
-          <div class="text-4xl font-bold text-orange-600 mb-4">1</div>
-          <h3 class="font-bold mb-2 text-gray-400">Hubungi Kami</h3>
-          <p class="text-orange-500 text-sm">Hubungi melalui WhatsApp atau Telepon</p>
+        <div class="bg-beige p-6 rounded-lg shadow-md text-center">
+          <div class="text-4xl font-bold mb-4 text-goldenrod">1</div>
+          <h3 class="font-bold mb-2 text-gray-800">Hubungi Kami</h3>
+          <p class="text-sm text-goldenrod">Hubungi melalui WhatsApp atau Telepon</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md text-center">
-          <div class="text-4xl font-bold text-orange-600 mb-4">2</div>
-          <h3 class="font-bold mb-2 text-gray-400">Pilih Menu</h3>
-          <p class="text-orange-500 text-sm">Pilih produk dan jumlah yang Anda inginkan</p>
+        <div class="bg-beige p-6 rounded-lg shadow-md text-center">
+          <div class="text-4xl font-bold mb-4 text-goldenrod">2</div>
+          <h3 class="font-bold mb-2 text-gray-800">Pilih Menu</h3>
+          <p class="text-sm text-goldenrod">Pilih produk dan jumlah yang Anda inginkan</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md text-center">
-          <div class="text-4xl font-bold text-orange-600 mb-4">3</div>
-          <h3 class="font-bold mb-2 text-gray-400">Konfirmasi</h3>
-          <p class="text-orange-500 text-sm">Kami konfirmasi pesanan dan waktu pengambilan</p>
+        <div class="bg-beige p-6 rounded-lg shadow-md text-center">
+          <div class="text-4xl font-bold mb-4 text-goldenrod">3</div>
+          <h3 class="font-bold mb-2 text-gray-800">Konfirmasi</h3>
+          <p class="text-sm text-goldenrod">Kami konfirmasi pesanan dan waktu pengambilan</p>
         </div>
         <!-- <div class="bg-white p-6 rounded-lg shadow-md text-center">
           <div class="text-4xl font-bold text-orange-600 mb-4">4</div>
@@ -167,7 +167,7 @@ import Layout from "../layouts/Layout.astro"
       const message = document.getElementById('message').value;
       
       const whatsappMessage = `*Formulir Kontak Dapur Koemau*\n\nNama: ${name}\nEmail: ${email}\nNo. Telepon: ${phone}\n\nPesan: ${message}`;
-      const whatsappUrl = `https://wa.me/628123456789?text=${encodeURIComponent(whatsappMessage)}`;
+      const whatsappUrl = `https://wa.me/6281298809641?text=${encodeURIComponent(whatsappMessage)}`;
       
       window.open(whatsappUrl, '_blank');
     });

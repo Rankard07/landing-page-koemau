@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 import favicon from '/favicon.ico';
+import 'aos/dist/aos.css';
+import { ShieldCheck } from '@lucide/astro'; 
 ---
 
 <!DOCTYPE html>
@@ -22,6 +24,28 @@ import favicon from '/favicon.ico';
       <slot /> 
     </main>
     <Footer />
+    <script>
+      import AOS from 'aos';
+      /* // Fungsi untuk inisialisasi
+      const initAOS = () => {
+        AOS.init({
+          duration: 800, // Durasi animasi
+          once: false,   // Animasi berulang saat di-scroll
+        });
+      };
+
+      // Jalankan saat pertama kali load
+      initAOS();
+
+      // Jika nanti Anda memakai ViewTransitions, tambahkan ini:
+      // document.addEventListener('astro:after-swap', initAOS); */
+
+      AOS.init({
+        duration: 1200, // Durasi animasi
+        once: false,   // Animasi berulang saat di-scroll
+      });
+      
+    </script>
   </body>
 </html>
 

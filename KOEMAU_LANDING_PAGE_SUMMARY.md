@@ -185,7 +185,7 @@ Setiap produk memiliki:
 
 ## 📱 WhatsApp Customization
 
-Ganti nomor WhatsApp `628123456789` dengan nomor bisnis Anda di:
+Ganti nomor WhatsApp `6281298809641` dengan nomor bisnis Anda di:
 
 - 6 halaman (Home, Contact, About, Location, Navbar, Footer)
 - ~15+ instances total
@@ -193,7 +193,7 @@ Ganti nomor WhatsApp `628123456789` dengan nomor bisnis Anda di:
 **Format WhatsApp link:**
 
 ```
-https://wa.me/628123456789?text=Pesan+Custom
+https://wa.me/6281298809641?text=Pesan+Custom
 ```
 
 ---

@@ -308,7 +308,7 @@ Production URLs:
 ├─ Contact: https://koemau.com/contact
 └─ Location: https://koemau.com/location
 
-All WhatsApp links point to: https://wa.me/628123456789
+All WhatsApp links point to: https://wa.me/6281298809641
 All Google Maps link: https://maps.app.goo.gl/7djWu5wsy4KhJvCe6
 ```
 

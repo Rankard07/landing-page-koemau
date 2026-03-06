@@ -216,7 +216,7 @@ STEP 1: BACA PANDUAN CEPAT
 STEP 2: CUSTOMIZE INFORMASI KONTAK
 
 GANTI NOMOR WHATSAPP:
-└─ Cari: 628123456789
+└─ Cari: 6281298809641
 └─ Ganti: NOMOR_WHATSAPP_ANDA
 └─ File: idx.astro, contact.astro, about.astro, location.astro,
 Navbar.astro, Footer.astro
@@ -292,7 +292,7 @@ STEP 5: DEPLOY KE PRODUCTION
 
 ✅ WHATSAPP
 • Pastikan nomor WhatsApp aktif & menggunakan WhatsApp Business jika mungkin
-• Format: 628123456789 (tanpa +62 di awal untuk link)
+• Format: 6281298809641 (tanpa +62 di awal untuk link)
 • Test semua WhatsApp links sebelum launch
 
 ✅ KONTAK

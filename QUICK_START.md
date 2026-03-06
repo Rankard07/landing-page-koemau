@@ -76,7 +76,7 @@
 
 1. CUSTOMIZE INFORMASI KONTAK
 
-   • Ganti nomor WhatsApp: 628123456789
+   • Ganti nomor WhatsApp: 6281298809641
    → File: src/components/Navbar.astro, Footer.astro
    → File: src/pages/index.astro, contact.astro, about.astro, location.astro
 
@@ -185,7 +185,7 @@ Dokumentasi:
    • Gunakan format .jpg atau .png
 
 2. WHATSAPP NUMBER FORMAT
-   • Gunakan format: 628123456789 (tanpa +62 di awal)
+   • Gunakan format: 6281298809641 (tanpa +62 di awal)
    • Pastikan nomor valid dan aktif WhatsApp Business
 
 3. TESTIMONIALS
@@ -209,7 +209,7 @@ Dokumentasi:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 PHASE 1: BASIC SETUP
-□ Ganti semua nomor WhatsApp (628123456789)
+□ Ganti semua nomor WhatsApp (6281298809641)
 □ Ganti email (info@koemau.com)
 □ Ganti nomor telepon (+62 812 3456 789)
 □ Ganti alamat lengkap
