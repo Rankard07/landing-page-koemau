@@ -2,28 +2,28 @@
 import Layout from "../layouts/Layout.astro"
 
 // Use Vite's BASE_URL so built paths include `astro.config.mjs` base (GitHub Pages)
-const baseUrl = import.meta.env.BASE_URL || '/';
+const baseUrl = import.meta.env.BASE_URL;
 
 const foodItems = [
   // Folder Siomay
-  { image: "/landing-page-koemau/assets/Siomay/siomay-25.jpeg", name: "Siomay", description: "Siomay tradisional dengan soal nikmat" },
-  { image: "/landing-page-koemau/assets/Siomay/pangsit.jpeg", name: "Pangsit", description: "Pangsit tradisional dengan soal nikmat" },
+  { image: `${baseUrl}assets/Siomay/siomay-25.jpeg`, name: "Siomay", description: "Siomay tradisional dengan saus nikmat" },
+  { image: `${baseUrl}assets/Siomay/pangsit.jpeg`, name: "Pangsit", description: "Pangsit tradisional dengan saus nikmat" },
   // Folder Dimsum
-  { image: "/landing-page-koemau/assets/Dimsum/dimsum.jpeg", name: "Dimsum", description: "Dimsum lezat dibuat dengan bahan segar" },
+  { image: `${baseUrl}assets/Dimsum/dimsum.jpeg`, name: "Dimsum", description: "Dimsum lezat dibuat dengan bahan segar" },
   // Folder Katsu
-  { image: "/landing-page-koemau/assets/Katsu/katsu.jpeg", name: "Katsu", description: "Katsu crispy dengan saus spesial" },
+  { image: `${baseUrl}assets/Katsu/katsu.jpeg`, name: "Katsu", description: "Katsu crispy dengan saus spesial" },
   // Folder Risol & Corndog
-  { image: "/landing-page-koemau/assets/Risol-Corndog/risol-5-ayam-pds-bolognaise-sayur.jpeg", name: "Risol", description: "Risol isi pilihan (ayam pedas, bolognaise, sayur)" },
-  { image: "/landing-page-koemau/assets/Risol-Corndog/corndog-6.jpeg", name: "Corndog", description: "Corndog dengan lapisan renyah dan isian lezat" },
+  { image: `${baseUrl}assets/Risol-Corndog/risol-5-ayam-pds-bolognaise-sayur.jpeg`, name: "Risol", description: "Risol isi pilihan (ayam pedas, bolognaise, sayur)" },
+  { image: `${baseUrl}assets/Risol-Corndog/corndog-6.jpeg`, name: "Corndog", description: "Corndog dengan lapisan renyah dan isian lezat" },
   // Folder Cireng
-  { image: "/landing-page-koemau/assets/Cireng/display-cireng.jpeg", name: "Cireng", description: "Cireng gurih tradisional Bandung" },
+  { image: `${baseUrl}assets/Cireng/display-cireng.jpeg`, name: "Cireng", description: "Cireng gurih tradisional Bandung" },
   // Folder Nugget
-  { image: "/landing-page-koemau/assets/Nugget/spicy-chicken-10-ayam.jpeg", name: "Spicy Chicken", description: "Ayam Pedas gurih dan empuk" },
-  { image: "/landing-page-koemau/assets/Nugget/ebi-furai-12.jpeg", name: "Ebi Furai", description: "Udang gurih dan empuk" },
-  { image: "/landing-page-koemau/assets/Nugget/egg-chicken-roll-gpt.jpeg", name: "Egg Chicken Roll", description: "Ayam telur gulung yang lezat" },
-  { image: "/landing-page-koemau/assets/Nugget/kaki-naga-10-ayam-ikan.jpeg", name: "Kaki Naga", description: "Kaki Naga ayam dan Ikan yang renyah dan empuk" },
-  { image: "/landing-page-koemau/assets/Nugget/shrimp-roll-10-udang-ayam.jpeg", name: "Shrimp Roll", description: "Olahan Udang dengan ayam yang renyah dan empuk" },
-  { image: "/landing-page-koemau/assets/Nugget/shrimp-cheese-10.jpeg", name: "Shrimp Cheese", description: "Olahan Udang yang berisi keju renyah" },
+  { image: `${baseUrl}assets/Nugget/spicy-chicken-10-ayam.jpeg`, name: "Spicy Chicken", description: "Ayam Pedas gurih dan empuk" },
+  { image: `${baseUrl}assets/Nugget/ebi-furai-12.jpeg`, name: "Ebi Furai", description: "Udang gurih dan empuk" },
+  { image: `${baseUrl}assets/Nugget/egg-chicken-roll-gpt.jpeg`, name: "Egg Chicken Roll", description: "Ayam telur gulung yang lezat" },
+  { image: `${baseUrl}assets/Nugget/kaki-naga-10-ayam-ikan.jpeg`, name: "Kaki Naga", description: "Kaki Naga ayam dan Ikan yang renyah dan empuk" },
+  { image: `${baseUrl}assets/Nugget/shrimp-roll-10-udang-ayam.jpeg`, name: "Shrimp Roll", description: "Olahan Udang dengan ayam yang renyah dan empuk" },
+  { image: `${baseUrl}assets/Nugget/shrimp-cheese-10.jpeg`, name: "Shrimp Cheese", description: "Olahan Udang yang berisi keju renyah" },
 ];
 ---
 <Layout>

@@ -1,6 +1,8 @@
 ---
 import { Image } from 'astro:assets';
 import LogoKoemau from 'public/Logo Koemau2.png';
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <nav class="fixed top-0 w-full backdrop-blur-md z-50 shadow-sm bg-orange-400">
@@ -16,16 +18,15 @@ import LogoKoemau from 'public/Logo Koemau2.png';
     </a>
     
     <div class="hidden md:flex gap-8 font-medium">
-      <a href="/" class="text-gray-700 hover:opacity-80 transition flex items-center gap-2 text-charcoal">
-        <!-- Home Icon from Font Awesome -->
-        <i class="fas fa-home text-lg"></i>
-        Home
-      </a>
-      <a href="/#menu" class="text-gray-700 hover:opacity-80 transition text-charcoal">Menu</a>
-      <a href="/about" class="text-gray-700 hover:opacity-80 transition text-charcoal">About</a>
-      <a href="/contact" class="text-gray-700 hover:opacity-80 transition text-charcoal">Contact</a>
-      <a href="/location" class="text-gray-700 hover:opacity-80 transition text-charcoal">Location</a>
-    </div>
+  <a href={baseUrl} class="text-gray-700 hover:opacity-80 transition flex items-center gap-2 text-charcoal">
+    <i class="fas fa-home text-lg"></i>
+    Home
+  </a>
+  
+  <a href={`${baseUrl}#menu`} class="text-gray-700 hover:opacity-80 transition text-charcoal">Menu</a>
+  <a href={`${baseUrl}about`} class="text-gray-700 hover:opacity-80 transition text-charcoal">About</a>
+  <a href={`${baseUrl}location`} class="text-gray-700 hover:opacity-80 transition text-charcoal">Location</a>
+</div>
 
     <a 
   href="https://wa.me/6281298809641" 
