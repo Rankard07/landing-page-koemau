@@ -1,8 +1,8 @@
-# Dapur Koemau — Landing Page
+# Koemau — Landing Page
 
 ## Ringkasan
 
-Repositori ini adalah implementasi landing page untuk "Dapur Koemau" menggunakan Astro. Situs menampilkan produk makanan, memudahkan pelanggan memesan via WhatsApp, dan menyediakan halaman pendukung: About, Contact, dan Location.
+Repositori ini adalah implementasi landing page untuk usaha "Koemau" menggunakan Astro. Situs menampilkan produk makanan, memudahkan pelanggan memesan via WhatsApp, dan menyediakan halaman pendukung: About, Contact, dan Location.
 
 ## Struktur Proyek (ringkas)
 
@@ -37,13 +37,13 @@ Repositori ini adalah implementasi landing page untuk "Dapur Koemau" menggunakan
 - Gambar produk berada di `public/assets/` — tambahkan folder baru untuk produk baru.
 - Komponen UI berada di `src/components/` — buat komponen ulang bila fitur baru diperlukan.
 
-## Pemeliharaan Dokumentasi
+<!-- ## Pemeliharaan Dokumentasi
 
 Dokumentasi tambahan telah dirapikan: file markdown terpisah di root dihapus untuk menjaga repositori fokus. Bila Anda ingin dokumentasi terperinci (peta situs, panduan deploy, dsb.), saya bisa menambah folder `docs/` atau membuat kembali file ringkas yang terintegrasi ke README.
 
 ## Butuh Bantuan?
 
-Jika ingin saya membuat ulang SITE_MAP ringkas, menambahkan panduan deploy, atau commit perubahan, beri tahu saya — saya bisa lanjutkan.
+Jika ingin saya membuat ulang SITE_MAP ringkas, menambahkan panduan deploy, atau commit perubahan, beri tahu saya — saya bisa lanjutkan. -->
 
 ## Lisensi
 
