@@ -1,29 +1,26 @@
 ---
 import Layout from "../layouts/Layout.astro"
 
-// Use Vite's BASE_URL so built paths include `astro.config.mjs` base (GitHub Pages)
-const baseUrl = import.meta.env.BASE_URL;
-
 const foodItems = [
   // Folder Siomay
-  { image: `${baseUrl}assets/Siomay/siomay-25.jpeg`, name: "Siomay", description: "Siomay tradisional dengan saus nikmat" },
-  { image: `${baseUrl}assets/Siomay/pangsit.jpeg`, name: "Pangsit", description: "Pangsit tradisional dengan saus nikmat" },
+  { image: `assets/Siomay/siomay-25.jpeg`, name: "Siomay", description: "Siomay tradisional dengan saus nikmat" },
+  { image: `assets/Siomay/pangsit.jpeg`, name: "Pangsit", description: "Pangsit tradisional dengan saus nikmat" },
   // Folder Dimsum
-  { image: `${baseUrl}assets/Dimsum/dimsum.jpeg`, name: "Dimsum", description: "Dimsum lezat dibuat dengan bahan segar" },
+  { image: `assets/Dimsum/dimsum.jpeg`, name: "Dimsum", description: "Dimsum lezat dibuat dengan bahan segar" },
   // Folder Katsu
-  { image: `${baseUrl}assets/Katsu/katsu.jpeg`, name: "Katsu", description: "Katsu crispy dengan saus spesial" },
+  { image: `assets/Katsu/katsu.jpeg`, name: "Katsu", description: "Katsu crispy dengan saus spesial" },
   // Folder Risol & Corndog
-  { image: `${baseUrl}assets/Risol-Corndog/risol-5-ayam-pds-bolognaise-sayur.jpeg`, name: "Risol", description: "Risol isi pilihan (ayam pedas, bolognaise, sayur)" },
-  { image: `${baseUrl}assets/Risol-Corndog/corndog-6.jpeg`, name: "Corndog", description: "Corndog dengan lapisan renyah dan isian lezat" },
+  { image: `assets/Risol-Corndog/risol-5-ayam-pds-bolognaise-sayur.jpeg`, name: "Risol", description: "Risol isi pilihan (ayam pedas, bolognaise, sayur)" },
+  { image: `assets/Risol-Corndog/corndog-6.jpeg`, name: "Corndog", description: "Corndog dengan lapisan renyah dan isian lezat" },
   // Folder Cireng
-  { image: `${baseUrl}assets/Cireng/display-cireng.jpeg`, name: "Cireng", description: "Cireng gurih tradisional Bandung" },
+  { image: `assets/Cireng/display-cireng.jpeg`, name: "Cireng", description: "Cireng gurih tradisional Bandung" },
   // Folder Nugget
-  { image: `${baseUrl}assets/Nugget/spicy-chicken-10-ayam.jpeg`, name: "Spicy Chicken", description: "Ayam Pedas gurih dan empuk" },
-  { image: `${baseUrl}assets/Nugget/ebi-furai-12.jpeg`, name: "Ebi Furai", description: "Udang gurih dan empuk" },
-  { image: `${baseUrl}assets/Nugget/egg-chicken-roll-gpt.jpeg`, name: "Egg Chicken Roll", description: "Ayam telur gulung yang lezat" },
-  { image: `${baseUrl}assets/Nugget/kaki-naga-10-ayam-ikan.jpeg`, name: "Kaki Naga", description: "Kaki Naga ayam dan Ikan yang renyah dan empuk" },
-  { image: `${baseUrl}assets/Nugget/shrimp-roll-10-udang-ayam.jpeg`, name: "Shrimp Roll", description: "Olahan Udang dengan ayam yang renyah dan empuk" },
-  { image: `${baseUrl}assets/Nugget/shrimp-cheese-10.jpeg`, name: "Shrimp Cheese", description: "Olahan Udang yang berisi keju renyah" },
+  { image: `assets/Nugget/spicy-chicken-10-ayam.jpeg`, name: "Spicy Chicken", description: "Ayam Pedas gurih dan empuk" },
+  { image: `assets/Nugget/ebi-furai-12.jpeg`, name: "Ebi Furai", description: "Udang gurih dan empuk" },
+  { image: `assets/Nugget/egg-chicken-roll-gpt.jpeg`, name: "Egg Chicken Roll", description: "Ayam telur gulung yang lezat" },
+  { image: `assets/Nugget/kaki-naga-10-ayam-ikan.jpeg`, name: "Kaki Naga", description: "Kaki Naga ayam dan Ikan yang renyah dan empuk" },
+  { image: `assets/Nugget/shrimp-roll-10-udang-ayam.jpeg`, name: "Shrimp Roll", description: "Olahan Udang dengan ayam yang renyah dan empuk" },
+  { image: `assets/Nugget/shrimp-cheese-10.jpeg`, name: "Shrimp Cheese", description: "Olahan Udang yang berisi keju renyah" },
 ];
 ---
 <Layout>
@@ -77,7 +74,7 @@ const foodItems = [
         {foodItems.map((item) => (
           <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition transform hover:scale-105">
             <div class="relative overflow-hidden h-64 bg-gray-200">
-              <img src={`${baseUrl}${item.image}`} alt={item.name} class="w-full h-full object-cover" />
+              <img src={item.image} alt={item.name} class="w-full h-full object-cover" />
             </div>
             <div class="p-6">
               <h3 class="text-2xl font-bold mb-2 text-gray-800">{item.name}</h3>
